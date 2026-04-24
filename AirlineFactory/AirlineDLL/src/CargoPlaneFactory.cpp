@@ -6,4 +6,5 @@ CargoPlaneFactory::CargoPlaneFactory(std::string model, double speed, double alt
 
 AbstractAircraft* CargoPlaneFactory::Create() {
     return new CargoPlane(_model, _speed, _alt, _pass, _cargo);
+    // Создаёт экземпляр CargoPlane и возвращает указатель на базовый класс
 }
