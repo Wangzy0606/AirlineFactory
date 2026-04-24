@@ -13,6 +13,5 @@ private:
 
 public:
     CargoPlaneFactory(std::string model, double speed, double alt, int pass, double cargo);
-    AbstractAircraft* Create() override;
-    // Создаёт экземпляр CargoPlane и возвращает указатель на базовый класс
+    AbstractAircraft* Create() override; // Переопределённый фабричный метод: создаёт и возвращает объект самолёта
 };
