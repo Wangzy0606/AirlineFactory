@@ -1,5 +1,4 @@
 #pragma once
-
 #include "AircraftFactory.h"
 #include "PassengerJet.h"
 
@@ -13,5 +12,5 @@ private:
 
 public:
     PassengerJetFactory(std::string model, double speed, double alt, int pass, double range);
-    AbstractAircraft* Create() override;
+    AbstractAircraft* Create() override; // Переопределённый фабричный метод: создаёт и возвращает объект самолёта
 };
