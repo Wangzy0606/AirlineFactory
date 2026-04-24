@@ -14,4 +14,5 @@ private:
 public:
     CargoPlaneFactory(std::string model, double speed, double alt, int pass, double cargo);
     AbstractAircraft* Create() override;
+    // Создаёт экземпляр CargoPlane и возвращает указатель на базовый класс
 };
